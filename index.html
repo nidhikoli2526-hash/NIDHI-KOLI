@@ -1,41 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Details</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
 </head>
 <body>
-
-<h2>Student Information Table</h2>
-
-<table border="1">
-    <tr>
-        <th>Serial No</th>
-        <th>Name</th>
-        <th>Roll No</th>
-        <th>Mobile No</th>
-    </tr>
-
-    <tr>
-        <td>1</td>
-        <td>Amit</td>
-        <td>101</td>
-        <td>9876543210</td>
-    </tr>
-
-    <tr>
-        <td>2</td>
-        <td>Neha</td>
-        <td>102</td>
-        <td>9123456789</td>
-    </tr>
-
-    <tr>
-        <td>3</td>
-        <td>Rohit</td>
-        <td>103</td>
-        <td>9012345678</td>
-    </tr>
-</table>
-
+    <h2>Login</h2>
+    <form action="/login" method="post">  <!-- Replace "/login" with your server endpoint -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <button type="submit">Login</button>
+    </form>
 </body>
 </html>
